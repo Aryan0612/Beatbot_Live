@@ -17,7 +17,7 @@ const Login = () => {
         <div className="text-center lg:text-left  text-neutral-content">
           <h1 className="text-5xl font-bold">Log In to your account</h1>
           <p className="py-6">
-            Log in with your existing account or <a href="https://accounts.google.com/signin"><u>Sign Up with Google</u></a>
+            Log in with your existing account or <a href="https://accounts.google.com/signin"><u>Sign Up with Google.</u></a>
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -34,6 +34,9 @@ const Login = () => {
 
                 if (!values.password)
                   errors.password = "Password is required too, bro.";
+                  
+                else if (values.password.length < 4)
+                  errors.password = "Password must be 4 characters long.";
                 
                 return errors;
               }}
@@ -58,6 +61,10 @@ const Login = () => {
                 {
                     setSubmitting(false);
                     navigate("/");
+                }
+                else
+                {
+                  errors.message = "Wrong Username/Password!";
                 }
                 
               }}
@@ -88,7 +95,7 @@ const Login = () => {
                     <Field
                       name="password"
                       id="password"
-                      type="text"
+                      type="password"
                       placeholder="Password Harder than The Rock"
                       className="input input-bordered"
                     />

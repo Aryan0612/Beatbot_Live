@@ -25,7 +25,7 @@ function GoPremium() {
             </ul>
         </div>
         </div>
-        <a href="/payment">
+        <a href="https://q9ifnk.csb.app/">
               <span></span>
               <span></span>
               <span></span>
