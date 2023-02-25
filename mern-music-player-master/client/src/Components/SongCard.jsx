@@ -11,7 +11,7 @@ const SongCard = ({ name, artist, id }) => {
       <figure>
         <img
           className="object-cover w-full h-full"
-          src="https://images.pexels.com/photos/1493004/pexels-photo-1493004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/1540319/pexels-photo-1540319.jpeg"
           alt="Shoes"
         />
       </figure>

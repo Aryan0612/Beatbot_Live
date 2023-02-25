@@ -11,7 +11,7 @@ const UploadSongForm = () => {
     <div
       className="hero min-h-screen"
       style={{
-        backgroundImage: `url("https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg")`,
+        backgroundImage: `url("https://images.pexels.com/photos/4734715/pexels-photo-4734715.jpeg")`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
@@ -44,7 +44,7 @@ const UploadSongForm = () => {
                   values.audio.type.substring(0, 5) !== "audio"
                 )
                   errors.audio = "This file format is not accepted.";
-                if (values.audio.size > 8388608)
+                if (values.audio.size > 15388608)
                   errors.audio =
                     "File too Large. Please upload files less than 8mb";
                 return errors;
@@ -82,7 +82,7 @@ const UploadSongForm = () => {
                       id="name"
                       name="name"
                       type="text"
-                      placeholder="Hotel California"
+                      placeholder="Shut Up My Moms Calling"
                       className="input input-bordered"
                     />
                     <ErrorMessage
@@ -99,7 +99,7 @@ const UploadSongForm = () => {
                       name="artist"
                       id="artist"
                       type="text"
-                      placeholder="Eagles"
+                      placeholder="Hotel Ugly"
                       className="input input-bordered"
                     />
                     <ErrorMessage

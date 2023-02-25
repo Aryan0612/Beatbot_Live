@@ -21,7 +21,7 @@ const compressionSettings = {
 export const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "MERN-Music-Player",
+    folder: "MERN-Music",
     resource_type: "video",
     public_id: (req, file) => `${Date.now()}-${file.originalname}`,
     transformation: compressionSettings,

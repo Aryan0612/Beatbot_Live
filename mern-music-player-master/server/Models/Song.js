@@ -9,7 +9,7 @@ const songSchema = new Schema(
       type: String,
       default: "Unknown Artist",
     },
-    audio: {
+    audio_url: {
       type: String,
       required: true,
     },

@@ -9,7 +9,7 @@ const Home = () => {
       <div
         className="hero h-[60vh]"
         style={{
-          backgroundImage: `url("https://images.pexels.com/photos/2191013/pexels-photo-2191013.jpeg")`,
+          backgroundImage: `url("https://source.unsplash.com/user/ggomi03")`,
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>

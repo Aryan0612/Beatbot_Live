@@ -6,8 +6,15 @@ import { Container, Form } from "react-bootstrap"
 import SpotifyWebApi from "spotify-web-api-node"
 import axios from "axios"
 
-import Nav from 'react-bootstrap/Nav';
+import nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
+
+import React from "react";
+import Logo from "./assets/Logo.jpg";
+import './SearchNavbar.css';
+import {BiHomeAlt,BiSearchAlt,BiRadio,BiCoffee} from 'react-icons/bi';
+
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "9941b79869674b4b96dc1429f6146eb3",
@@ -78,15 +85,23 @@ export default function Dashboard({ code }) {
 
   return (
     <Container className="d-flex flex-column py-2" style={{ height: "100vh" }}>
-      <Navbar bg="primary" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">POATs</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Playlist</Nav.Link>
-            <Nav.Link href="#pricing">Profile</Nav.Link>
-          </Nav>
-        </Container>
+      <Navbar variant="dark">
+        <div className="navbar bg-base-100 bg-opacity-60 backdrop-blur z-50">
+      <div className="lol">
+        
+          <img src={Logo} className="w-8 h-8 mx-1" />
+          <span>Music Player</span>
+      </div>
+    </div>
+    <nav>
+    <ul>
+      <div></div><li><a href="http://127.0.0.1:5173/"><BiHomeAlt size={50} /><span>Home</span></a></li>
+      <li><a href="http://localhost:3000/" className="active"><BiSearchAlt size={50}/><span>Search</span></a></li>
+      <li><a href="https://plaza.one/"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
+      
+    </ul>
+  </nav>
       </Navbar>
       <Form.Control
         type="search"

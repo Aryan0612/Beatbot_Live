@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.jpg";
 import './Navbar.css';
-import {BiHomeAlt,BiSearchAlt,BiRadio} from 'react-icons/bi'
+import {BiHomeAlt,BiSearchAlt,BiRadio,BiCoffee} from 'react-icons/bi';
+
 
 const Navbar = () => {
   return (
@@ -21,8 +22,10 @@ const Navbar = () => {
     <nav>
     <ul>
       <div></div><li><a href="/" className="active"><BiHomeAlt size={50} /><span>Home</span></a></li>
-      <li><a href="/services"><BiSearchAlt size={50}/><span>Search</span></a></li>
-      <li><a href="/portfolio"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="http://localhost:3000/"><BiSearchAlt size={50}/><span>Search</span></a></li>
+      <li><a href="https://plaza.one/"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
+      
     </ul>
   </nav>
   </React.Fragment>

@@ -3,14 +3,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 0 2rem;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    font-weight: 600;
   }
   
   ul {
@@ -21,7 +21,7 @@ nav {
   }
   
   li {
-    margin-left: 16rem;
+    margin-left: 10rem;
   }
   
   a {
@@ -53,3 +53,6 @@ nav {
     color: #f39c12;
   }
   
+img{
+  width: 70%;
+}

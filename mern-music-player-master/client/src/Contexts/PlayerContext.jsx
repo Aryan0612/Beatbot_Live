@@ -27,9 +27,9 @@ export const PlayerContextProvider = ({ children }) => {
   }, [volume]);
 
   const setDefaultSong = async () => {
-    const song = await getSong("63edc0c77c63206c7df66438");
+    const song = await getSong("63f8afc102b53113e9024778");
     song.currTime = 0.0;
-    song.duration = 483;
+    song.duration = 176;
     setCurrSong(song);
   };
 
