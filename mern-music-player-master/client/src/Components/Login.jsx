@@ -39,22 +39,22 @@ const Login = () => {
               }}
               onSubmit={async (values, { setSubmitting, resetForm }) => {
                 setSubmitting(true);
-                if(values.username == "om" && values.password == "homie")
+                if(values.username == "Om" && values.password == "homie")
                 {
                     setSubmitting(false);
                     navigate("/");
                 }
-                if(values.username == "aryan" && values.password == "palawa")
+                if(values.username == "Aryan" && values.password == "ayan")
                 {
                     setSubmitting(false);
                     navigate("/");
                 }
-                if(values.username == "pratik" && values.password == "euuu")
+                if(values.username == "Pratik" && values.password == "euuu")
                 {
                     setSubmitting(false);
                     navigate("/");
                 }
-                if(values.username == "tejas" && values.password == "iluvgym")
+                if(values.username == "Tejas" && values.password == "iluvgym")
                 {
                     setSubmitting(false);
                     navigate("/");

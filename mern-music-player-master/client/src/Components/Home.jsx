@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SongsList from "./SongsList";
+import {FaCrown} from 'react-icons/fa';
 
 
 const Home = () => {
@@ -31,24 +32,10 @@ const Home = () => {
         </div>
       </div>
       <Link
-        to="/upload"
+        to="/gopremium"
         className="fixed right-6 z-50 drop-shadow-2xl bottom-24 btn btn-secondary btn-circle btn-lg"
       >
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 4.5v15m7.5-7.5h-15"
-          />
-        </svg>
+       <FaCrown />
       </Link>
       <SongsList />
     </div>

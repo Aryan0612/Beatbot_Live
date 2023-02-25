@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Player from "./Components/Player";
 import Login from "./Components/Login";
 import Premium from "./Components/Premium";
+import Payment from "./Components/Payment";
 import { PlayerContextProvider } from "./Contexts/PlayerContext";
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
               <Route path="/upload" element={<UploadSongForm />} />
               <Route path="/login" element={<Login />} />
               <Route path="/gopremium" element={<Premium />} />
-            </Routes>
+              <Route path="/payment" element={<Payment />} />
+            </Routes> 
           </div>
           <Player />
         </PlayerContextProvider>

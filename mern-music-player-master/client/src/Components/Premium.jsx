@@ -25,7 +25,7 @@ function GoPremium() {
             </ul>
         </div>
         </div>
-        <a href="#">
+        <a href="/payment">
               <span></span>
               <span></span>
               <span></span>
