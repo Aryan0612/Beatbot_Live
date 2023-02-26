@@ -23,7 +23,7 @@ const Navbar = () => {
     <ul>
       <div></div><li><a href="/" className="active"><BiHomeAlt size={50} /><span>Home</span></a></li>
       <li><a href="http://localhost:3000/"><BiSearchAlt size={50}/><span>Search</span></a></li>
-      <li><a href="https://plaza.one/"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="https://r5k9v0.csb.app/"><BiRadio size={50}/><span>Radio</span></a></li>
       <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
       
     </ul>
