@@ -37,7 +37,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/lyrics`, {
+      .get(`https://beatbot-live-spotify.onrender.com/lyrics`, {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
