@@ -37,7 +37,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get("http://localhost:3001/lyrics", {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/lyrics`, {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
@@ -96,7 +96,7 @@ export default function Dashboard({ code }) {
     </div>
     <nav>
     <ul>
-      <div></div><li><a href="http://localhost:5173/"><BiHomeAlt size={50} /><span>Home</span></a></li>
+      <div></div><li><a href="https://beatbot-live.vercel.app/"><BiHomeAlt size={50} /><span>Home</span></a></li>
       <li><a href="http://localhost:3000/" className="active"><BiSearchAlt size={50}/><span>Search</span></a></li>
       <li><a href="http://127.0.0.1:5000/"><BiRadio size={50}/><span>Mood</span></a></li>
       <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
