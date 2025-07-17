@@ -17,7 +17,7 @@ export default function Login() {
         Search
       </a>
       {' '}
-      <a className="btn btn-lg btn-danger" href="https://beatbot-live.vercel.app/">
+      <a className="btn btn-lg btn-danger" href="https://beatbot-live-spotify.vercel.app/">
         Go Back
       </a>
       </div>
