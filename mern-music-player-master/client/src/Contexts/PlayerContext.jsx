@@ -34,23 +34,23 @@ export const PlayerContextProvider = ({ children }) => {
   };
 
   const getAllSongs = async () => {
-  try {
-    const res = await axios.get(`${process.env.REACT_APP_API_URL}/songs/all`);
-    setSongs(res.data.songs);
-  } catch (err) {
-    console.log(err);
-  }
+    try {
+        const res = await axios.get("https://beatbot-live.onrender.com/api/v1/songs/all");
+        setSongs(res.data.songs);
+    } catch (err) {
+        console.log(err);
+    }
 };
-
 
 const getSong = async (id) => {
-  try {
-    const res = await axios.get(`${process.env.REACT_APP_API_URL}/song/${id}`);
-    return res.data.song;
-  } catch (err) {
-    console.log(err);
-  }
+    try {
+        const res = await axios.get(`https://beatbot-live.onrender.com/api/v1/song/${id}`);
+        return res.data.song;
+    } catch (err) {
+        console.log(err);
+    }
 };
+
 
 
   const setSongInPlayer = async (id) => {
