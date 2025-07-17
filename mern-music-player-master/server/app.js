@@ -6,7 +6,12 @@ import globalErrorHandler from "./controllers/errorController.js";
 import songRouter from "./Routes/songRouter.js";
 // import authRouter from "./Routes/authRouter.js";
 const app = express();
-app.use(cors());
+const allowedOrigins = ['https://beatbot-live.vercel.app'];
+
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
 
 // Development Logging
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
