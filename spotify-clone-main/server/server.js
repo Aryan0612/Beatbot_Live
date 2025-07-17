@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 const bodyParser = require("body-parser")
-const lyricsFinder = require("lyrics-finder")
+const lyricsFinder = require('lyrics-finder')
 const SpotifyWebApi = require("spotify-web-api-node")
 
 const app = express()
@@ -62,3 +62,4 @@ app.get("/lyrics", async (req, res) => {
 })
 
 app.listen(3001)
+

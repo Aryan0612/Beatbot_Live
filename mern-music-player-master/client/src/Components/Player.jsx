@@ -110,7 +110,7 @@ const Player = () => {
         <div className="flex justify-start gap-2 lg:gap-4">
           <div className="avatar items-center">
             <div className="w-8 h-8 rounded">
-              <img src="https://api.lorem.space/image/album?w=150&amp;amp;amp;amp;h=220" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxp97cDdQYM_t51YBbq-FK8iJq97e0nec-A&usqp=CAU" />
             </div>
           </div>
           <div className="flex flex-col gap-0.5 lg:gap-1 justify-center">

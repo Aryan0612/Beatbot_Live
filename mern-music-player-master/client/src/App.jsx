@@ -4,7 +4,8 @@ import Navbar from "./Components/Navbar";
 import UploadSongForm from "./Components/UploadSongForm";
 import Home from "./Components/Home";
 import Player from "./Components/Player";
-import Login from "./Components/Login";
+//import Login from "./Components/Login";
+//import SignUp from "./Components/SignUp";
 import Premium from "./Components/Premium";
 import { PlayerContextProvider } from "./Contexts/PlayerContext";
 
@@ -18,7 +19,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/upload" element={<UploadSongForm />} />
-              <Route path="/login" element={<Login />} />
+              {/* <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} /> */}
               <Route path="/gopremium" element={<Premium />} />
             </Routes> 
           </div>

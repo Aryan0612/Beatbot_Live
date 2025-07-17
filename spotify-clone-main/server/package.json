@@ -15,10 +15,11 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "lyrics-finder": "^21.7.0",
+    "firebase": "^10.7.1",
     "spotify-web-api-node": "^5.0.2"
   },
   "devDependencies": {
+    "lyrics-finder": "^21.7.0",
     "nodemon": "^2.0.7"
   }
 }

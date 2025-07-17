@@ -15,15 +15,15 @@ const Navbar = () => {
           className="btn btn-ghost normal-case text-xl items-center flex"
         >
           <img src={Logo} className="w-8 h-8 mx-2" />
-          Music Player
+          BeatBot Music Player
         </Link>
       </div>
     </div>
     <nav>
     <ul>
       <div></div><li><a href="/" className="active"><BiHomeAlt size={50} /><span>Home</span></a></li>
-      <li><a href="https://slider.kz/" target="_blank"><BiSearchAlt size={50}/><span>Search</span></a></li>
-      <li><a href="https://r5k9v0.csb.app/"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="http://localhost:3000" target="_blank"><BiSearchAlt size={50}/><span>Search</span></a></li>
+      <li><a href="http://127.0.0.1:5000/"><BiRadio size={50}/><span>Mood</span></a></li>
       <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
       
     </ul>

@@ -17,7 +17,7 @@ import {BiHomeAlt,BiSearchAlt,BiRadio,BiCoffee} from 'react-icons/bi';
 
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: "9941b79869674b4b96dc1429f6146eb3",
+  clientId: "7d711f19e40c4f49886786aea6919a45",
 })
 
 export default function Dashboard({ code }) {
@@ -44,6 +44,7 @@ export default function Dashboard({ code }) {
         },
       })
       .then(res => {
+        console.log(res.data.lyrics);
         setLyrics(res.data.lyrics)
       })
   }, [playingTrack])
@@ -95,9 +96,9 @@ export default function Dashboard({ code }) {
     </div>
     <nav>
     <ul>
-      <div></div><li><a href="http://127.0.0.1:5173/"><BiHomeAlt size={50} /><span>Home</span></a></li>
+      <div></div><li><a href="http://localhost:5173/"><BiHomeAlt size={50} /><span>Home</span></a></li>
       <li><a href="http://localhost:3000/" className="active"><BiSearchAlt size={50}/><span>Search</span></a></li>
-      <li><a href="https://plaza.one/"><BiRadio size={50}/><span>Radio</span></a></li>
+      <li><a href="http://127.0.0.1:5000/"><BiRadio size={50}/><span>Mood</span></a></li>
       <li><a href="https://wave-music-player-psi.vercel.app/"><BiCoffee size={50}/><span>Chill</span></a></li>
       
     </ul>

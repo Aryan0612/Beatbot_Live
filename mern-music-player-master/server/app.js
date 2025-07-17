@@ -4,6 +4,7 @@ import cors from "cors";
 import AppError from "./utils/AppError.js";
 import globalErrorHandler from "./controllers/errorController.js";
 import songRouter from "./Routes/songRouter.js";
+// import authRouter from "./Routes/authRouter.js";
 const app = express();
 app.use(cors());
 
@@ -13,6 +14,7 @@ if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 app.use(json());
 
 app.use("/api/v1/", songRouter);
+// app.use("/api/v2/", authRouter);
 
 app.options("*", (req, res) => {
   res.status(200).send();
