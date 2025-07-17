@@ -4,7 +4,7 @@ import axios from "axios";
 import App from "./App";
 import "./index.css";
 
-axios.defaults.baseURL = "http://localhost:4000/api/v1";
+//axios.defaults.baseURL = "http://localhost:4000/api/v1";
 //axios.defaults.baseURL = "https://mern-music-player-server.onrender.com/api/v1";
 axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
 axios.defaults.headers.common["Access-Control-Allow-Headers"] = "*";
